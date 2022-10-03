@@ -4,7 +4,6 @@
 
 #title,
 .navbar {
-  /* background-color: #652bf9; */
   background-color: #ffc300;
 }
 
@@ -79,6 +78,7 @@
 }
 
 .bizName {
+  font-family: "Ubuntu", sans-serif;
   filter: drop-shadow(0 3px 1px rgba(0, 0, 0, 0.576));
 }
 
@@ -209,7 +209,7 @@ a {
   height: 10rem;
   width: 100%;
   object-fit: contain;
-  margin: 1.5rem 0 0 1rem !important;
+  margin: 1.5rem 0 0 0.5rem !important;
 }
 
 .card:hover {
@@ -242,9 +242,6 @@ a {
 }
 
 @media only screen and (max-width: 991px) {
-  /* .image {
-    display: none;
-  } */
   span {
     color: black;
   }

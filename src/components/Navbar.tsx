@@ -71,12 +71,12 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
                     <>
                       <li className="nav-item ">
                         <NavLink className="nav-link text-white" to="/new-card">
-                          <span>New Card</span>
+                          <span>Create New Card</span>
                         </NavLink>
                       </li>
                       <li className="nav-item ">
                         <NavLink className="nav-link text-white" to="/my-cards">
-                          <span>My Cards</span>
+                          <span>My BizCards</span>
                         </NavLink>
                       </li>
                     </>
@@ -89,7 +89,7 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
                           className="nav-link text-white"
                           to="/all-cards"
                         >
-                          <span>All Cards</span>
+                          <span>All BizCards</span>
                         </NavLink>
                       </li>
                       <li className="nav-item">

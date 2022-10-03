@@ -63,7 +63,7 @@ const Mycards: FunctionComponent<MycardsProps> = () => {
                     </div>
                     {/* Edit / Delete Btns */}
                     {isBiz ? (
-                      <div className="col-lg-1">
+                      <div className="col-lg-0">
                         <div className="dropdown">
                           <div data-bs-toggle="dropdown">
                             <img

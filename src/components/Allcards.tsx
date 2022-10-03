@@ -37,7 +37,7 @@ const Cards: FunctionComponent<AllcardsProps> = () => {
               return (
                 <div key={card.card_id} className="col-lg-4 card bizCard">
                   <div className="top">
-                    <div className="col-lg-11 text-center mx-2">
+                    <div className="col-lg-11 text-center">
                       <img
                         src={card.business_image}
                         className="card-img-top mx-auto"
