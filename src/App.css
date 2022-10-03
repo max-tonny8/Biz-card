@@ -1,38 +1,260 @@
-.App {
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+#title,
+.navbar {
+  /* background-color: #652bf9; */
+  background-color: #ffc300;
+}
+
+.big-text {
+  color: #252525;
+}
+
+.login {
+  width: 50rem;
+  animation: fadeInRight 0.5s ease-in-out;
+}
+
+.leftDiv {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightDiv {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffc300;
+}
+
+.rightDivScreenFit {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffc300;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+  font-weight: 500;
+  font-size: larger;
+}
+
+.logo {
+  width: 3.7rem;
+  margin: 0 0.5rem 0.3rem 0;
+  filter: drop-shadow(0 3px 1px rgba(0, 0, 0, 0.576));
+}
+
+.big-logo {
+  width: 15rem;
+  filter: drop-shadow(0 7px 1px rgba(0, 0, 0, 0.576));
+  transition: transform 0.3s;
+  animation: fadeInRight 0.5s ease-in-out;
+}
+
+.big-logo:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+.name {
+  color: #ffc300;
+}
+
+.name:hover {
+  color: #bc9000;
+}
+
+.bizName {
+  filter: drop-shadow(0 3px 1px rgba(0, 0, 0, 0.576));
+}
+
+h1 h2 h3 {
+  font-family: "Montserrat";
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 1.9rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.content {
+  padding: 3% 16%;
+}
+
+.image {
+  width: 40rem;
+  padding-bottom: 20px;
+  animation: fadeInRight 0.5s ease-in-out;
+}
+
+#features {
+  padding: 1% 15%;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 6%;
+}
+
+.icon,
+.socials {
+  margin-bottom: 1rem;
+  color: #ffc300;
+}
+
+.icon:hover,
+.socials:hover {
+  color: #ffd036;
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+.form-control {
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.17));
+}
+
+a {
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.nav-link:hover {
+  color: #fde28b !important;
+}
+
+.link {
+  color: black;
+  font-weight: bold;
+}
+
+.logo-img {
+  margin: 5px;
+}
+
+.wave {
+  width: 100%;
+}
+
+#pricing {
+  padding: 4% 15%;
+  background-color: #ffc300;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pricing-col {
+  padding: 3% 2%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.24);
+  transition: transform 0.3s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bizCard {
+  width: 29rem;
+  height: 35rem;
+}
+
+.top {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.dropdown {
+  z-index: 99;
+  margin: 1.5rem 0 0 0;
+}
+
+.dropdown:hover {
+  cursor: pointer;
+}
+
+.allCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  animation: fadeInRight 0.5s ease-in-out;
+}
+
+.card-img-top {
+  height: 10rem;
+  width: 100%;
+  object-fit: contain;
+  margin: 1.5rem 0 0 1rem !important;
+}
+
+.card:hover {
+  z-index: 5;
+  transform: scale(1.02);
+  transition: transform 0.1s;
+}
+
+#footer {
+  padding: 1.5%;
+  text-align: center;
+  background-color: #252525;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.center,
+.button,
+.form-check {
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
+@keyframes fadeInRight {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  /* .image {
+    display: none;
+  } */
+  span {
+    color: black;
+  }
+
+  .leftDiv {
+    display: none;
+  }
+
+  .bizCard {
+    width: 100%;
+    height: 100%;
   }
 }

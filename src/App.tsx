@@ -1,24 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import About from "./components/About";
+import Signin from "./components/Signin";
+import Signup from "./components/Signup";
+import { ToastContainer } from "react-toastify";
+import Allcards from "./components/Allcards";
+import Newcard from "./components/Newcard";
+import Mycards from "./components/Mycards";
+import Editcard from "./components/Editcard";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ToastContainer theme="dark" />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="signin" element={<Signin />} />
+          <Route path="signup" element={<Signup />} />
+          <Route path="all-cards" element={<Allcards />} />
+          <Route path="new-card" element={<Newcard />} />
+          <Route path="my-cards">
+            <Route index element={<Mycards />} />
+            <Route path="edit/:id" element={<Editcard />} />
+          </Route>
+        </Routes>
+      </Router>
     </div>
   );
 }
