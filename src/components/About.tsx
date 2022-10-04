@@ -22,13 +22,13 @@ const About: FunctionComponent<AboutProps> = () => {
             </p>
           </div>
           <div className="col-lg-6 mt-5 center">
-            <img className="image " src="card1.png" alt="" />
+            <img className="image img-fluid " src="card1.png" alt="" />
           </div>
         </div>
 
         <div className="row">
           <div className="col-lg-6 mt-5 center">
-            <img className="image" src="card2.png" alt="" />
+            <img className="image img-fluid" src="card2.png" alt="" />
           </div>
           <div className="col-lg-6 mt-5">
             <h1>How do BizCards digital cards work?</h1>
@@ -58,7 +58,7 @@ const About: FunctionComponent<AboutProps> = () => {
           </div>
           <div className="col-lg-6 mt-5 center">
             {" "}
-            <img className="image" src="card3.png" alt="" />
+            <img className="image img-fluid" src="card3.png" alt="" />
           </div>
         </div>
       </div>
