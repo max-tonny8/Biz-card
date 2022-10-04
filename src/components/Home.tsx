@@ -20,21 +20,15 @@ const Home: FunctionComponent<HomeProps> = () => {
               </h1>
               <div className="buttons">
                 <div className="row">
-                  <Link
-                    to={"/signin"}
-                    className="col-lg-3 btn btn-dark btn-lg mx-1"
-                  >
+                  <Link to={"/signin"} className="col-lg-3 btn btn-dark mx-1">
                     <i className="fa-solid fa-key"></i> Sign in
                   </Link>
-                  <Link
-                    to={"/signup"}
-                    className="col-lg-3 btn btn-dark btn-lg mx-1"
-                  >
+                  <Link to={"/signup"} className="col-lg-3 btn btn-dark mx-1">
                     <i className="fa-solid fa-user-plus"></i> Sign up
                   </Link>
                   <Link
                     to={"/about"}
-                    className="col-lg-3 btn btn-outline-dark btn-lg mx-1"
+                    className="col-lg-3 btn btn-outline-dark mx-1"
                   >
                     <i className="fa-solid fa-circle-info"></i> About
                   </Link>
