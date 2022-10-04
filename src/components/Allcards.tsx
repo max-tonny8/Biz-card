@@ -70,13 +70,17 @@ const Cards: FunctionComponent<AllcardsProps> = () => {
             })
           ) : (
             <>
-              <h4 className="text-center mt-5">There are no Cards added..</h4>
-              <img className="image img-fluid" src="nocards.png" alt="" />
+              <h4 className="text-center  mt-5">There are no Cards added..</h4>
+              <img
+                className="image mx-auto img-fluid"
+                src="nocards.png"
+                alt=""
+              />
             </>
           )}
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
