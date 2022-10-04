@@ -114,12 +114,12 @@ h3 {
 }
 
 #features {
-  padding: 1% 15%;
+  padding: 0 15%;
 }
 
 .feature-box {
   text-align: center;
-  padding: 6%;
+  padding: 4%;
 }
 
 .icon,
