@@ -182,7 +182,7 @@ const Newcard: FunctionComponent<NewcardProps> = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
