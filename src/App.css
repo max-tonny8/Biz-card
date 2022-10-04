@@ -135,9 +135,9 @@ h3 {
   transition: transform 0.5s;
 }
 
-.form-control {
+/* .form-control {
   filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.17));
-}
+} */
 
 a {
   text-decoration: none;
@@ -151,6 +151,10 @@ a {
 .link {
   color: black;
   font-weight: bold;
+}
+
+.homeBtn {
+  width: 13.5rem;
 }
 
 .logo-img {
@@ -171,16 +175,6 @@ a {
   padding: 3% 2%;
 }
 
-.card {
-  box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.24);
-  transition: transform 0.3s;
-}
-
-.bizCard {
-  width: 29rem;
-  height: 35rem;
-}
-
 .top {
   display: flex;
   flex-direction: row;
@@ -196,12 +190,20 @@ a {
   cursor: pointer;
 }
 
+.card {
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.14);
+  transition: transform 0.3s;
+}
+
+.bizCard {
+  width: 31rem;
+  height: 35rem;
+}
+
 .allCards {
   display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  gap: 1rem;
+  margin: 0 0 0 1rem;
+  gap: 1.3rem;
   animation: fadeInRight 0.5s ease-in-out;
 }
 

@@ -46,6 +46,7 @@ const Mycards: FunctionComponent<MycardsProps> = () => {
       <Navbar />
       <h1 className="text-center mt-5 mb-5">
         <i className="fa-regular fa-address-card"></i> My BizCards
+        <span style={{ color: "#eeeeee" }}> ({card.length})</span>
       </h1>
       <div className="container-fluid w-75 mb-5">
         <div className="row allCards">
