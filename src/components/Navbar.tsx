@@ -30,7 +30,7 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
       <nav className="navbar navbar-expand-lg navbar-dark ">
         <div className="container">
           <div className="navbar-brand navbar-title">
-            <img className="logo" src="Logo.png" alt="" />
+            <img className="logo" src="/Logo.png" alt="" />
             <span className="bizName text-white">BizCards</span>
           </div>
           <button

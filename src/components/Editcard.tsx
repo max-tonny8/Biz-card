@@ -79,7 +79,7 @@ const Editcard: FunctionComponent<EditcardProps> = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="leftDiv col-lg-6">
-            <img className="login" src="edit.png" alt="" />
+            <img className="login" src="/edit.png" alt="" />
           </div>
           <div className="rightDivScreenFit col-lg-6">
             <h1 className="text-center mb-3">
