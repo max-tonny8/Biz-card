@@ -7,11 +7,18 @@ This is My fourth summary project on React lessons in Hackeru Development course
 BizCards is a modern and safe platform to share information of your business to the world.
 Bizcards can be conveniently shared to a non-business users who look for their services.
 
+## More Info:
+
+Development Field: Fullstack  
+Live Web: https://bizcards-app.netlify.app/  
+Authors: Kfir Lankry
+
 ## Project ingredients:
 
 - React
 - TypeScript
 - Node.js
+- Express
 - MongoDB
 - Bootstrap CSS
 - Font-awesome Icons
@@ -33,10 +40,17 @@ npm i
 ```
 npm start
 ```
-## Screenshots:  
-![alt text](https://i.ibb.co/QdLY0Jt/bizcards.jpg?raw=true) 
-***
-![alt text](https://i.ibb.co/wCJDXqr/bizcards-2.jpg?raw=true)  
-***
-![alt text](https://i.ibb.co/cT9hSDj/bizcards-3.jpg?raw=true)  
-***
+
+## Screenshots:
+
+![alt text](https://i.ibb.co/QdLY0Jt/bizcards.jpg?raw=true)
+
+---
+
+![alt text](https://i.ibb.co/wCJDXqr/bizcards-2.jpg?raw=true)
+
+---
+
+![alt text](https://i.ibb.co/cT9hSDj/bizcards-3.jpg?raw=true)
+
+---
