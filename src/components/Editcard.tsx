@@ -23,8 +23,6 @@ const Editcard: FunctionComponent<EditcardProps> = () => {
   useEffect(() => {
     getCardById(id as string)
       .then((result) => {
-        console.log(result.data);
-
         setCard(result.data);
       })
       .catch(() => {
@@ -65,11 +63,9 @@ const Editcard: FunctionComponent<EditcardProps> = () => {
         .then((result) => {
           successMsg("Card Edited Successfully!");
           navigate("/all-cards");
-          console.log(result);
         })
         .catch((err) => {
           errorMsg("Something went wrong!");
-          console.log(err);
         });
     },
   });

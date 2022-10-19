@@ -29,12 +29,10 @@ const Signin: FunctionComponent<SigninProps> = () => {
         .then((result) => {
           sessionStorage.setItem("token", result.data.token);
           successMsg("You Signed in Successfully!");
-          console.log(result.data[0]);
           navigate("/all-cards");
         })
         .catch((err) => {
           errorMsg("Something went Wrong, Try Agian");
-          console.log(err);
         });
     },
   });

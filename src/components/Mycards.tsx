@@ -24,8 +24,6 @@ const Mycards: FunctionComponent<MycardsProps> = () => {
           successMsg(`${card.business_name} Deleted Successfully!`);
         })
         .catch((err) => {
-          console.log(err);
-
           errorMsg("Something went wrong, Try agian.");
         });
   };
@@ -34,11 +32,10 @@ const Mycards: FunctionComponent<MycardsProps> = () => {
     setIsBiz(getBiz());
     getCardByUserId()
       .then((result) => {
-        console.log(result.data);
         setCard(result.data);
       })
       .catch((err) => {
-        console.log(err);
+        errorMsg("Something went wrong, Try agian.");
       });
   }, [isChanged]);
   return (

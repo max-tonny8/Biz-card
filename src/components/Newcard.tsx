@@ -41,11 +41,9 @@ const Newcard: FunctionComponent<NewcardProps> = () => {
         .then((result) => {
           successMsg("Card Added Successfully!");
           navigate("/all-cards");
-          console.log(result);
         })
         .catch((err) => {
           errorMsg("Something went wrong!");
-          console.log(err);
         });
     },
   });

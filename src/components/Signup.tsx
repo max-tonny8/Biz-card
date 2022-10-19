@@ -45,7 +45,6 @@ const Signup: FunctionComponent<SignupProps> = () => {
         })
         .catch((err) => {
           errorMsg("Something went Wrong, Try Agian");
-          console.log(err);
         });
     },
   });
