@@ -245,7 +245,6 @@ a {
   background: white;
   border-radius: 3px;
   position: relative;
-  filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.277));
 }
 .information {
   text-align: center;

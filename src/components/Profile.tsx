@@ -28,7 +28,7 @@ const Profile: FunctionComponent<ProfileProps> = () => {
         <i className="fa-solid fa-user mb-4"></i> Profile
       </h1>
       <div className="user-card">
-        <div className="containerDiv">
+        <div className="containerDiv card">
           <img
             src="banner.jpg"
             alt="cookies"
