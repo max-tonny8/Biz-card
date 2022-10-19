@@ -241,11 +241,11 @@ a {
 .containerDiv {
   margin: 0 auto;
   width: 30rem;
-  height: 465px;
+  height: 26.5rem;
   background: white;
   border-radius: 3px;
   position: relative;
-  filter: drop-shadow(0 3px 1px rgba(0, 0, 0, 0.576));
+  filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.277));
 }
 .information {
   text-align: center;
@@ -257,6 +257,7 @@ a {
 }
 .name {
   font-size: 22px;
+  font-weight: bold;
 }
 .position {
   font-size: 16px;
@@ -309,5 +310,10 @@ a {
   .bizCard {
     width: 100%;
     height: 100%;
+  }
+
+  .containerDiv {
+    width: 90%;
+    height: 23.5rem;
   }
 }
