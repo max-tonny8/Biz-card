@@ -1,4 +1,5 @@
 import { FunctionComponent, useEffect, useState } from "react";
+import { errorMsg } from "../services/feedbackService";
 import { getUser } from "../services/userService";
 import Navbar from "./Navbar";
 
@@ -17,7 +18,7 @@ const Profile: FunctionComponent<ProfileProps> = () => {
         setUserProfile(result.data);
       })
       .catch((err) => {
-        alert("Something Went Wrong...");
+        errorMsg("Something went Wrong, Try Agian");
       });
   }, []);
   return (
@@ -36,7 +37,7 @@ const Profile: FunctionComponent<ProfileProps> = () => {
 
           <div className="information">
             <img src="avatar.png" alt="avatar" className="avatar" />
-            <span className="mb-4">Currently Signed in As:</span>
+            <span className="mb-4">Currently Signed In As:</span>
             <div className="name mb-3 ">{userProfile.name}</div>
             <hr />
             <div className="mb-2">
@@ -46,7 +47,9 @@ const Profile: FunctionComponent<ProfileProps> = () => {
             <div className="mb-2">
               <strong>Account Type: </strong>
               {userProfile.biz ? (
-                <span style={{ color: "green" }}>Business Account </span>
+                <span style={{ color: "green" }}>
+                  Business Account <i className="fa-solid fa-certificate"></i>{" "}
+                </span>
               ) : (
                 <span>Not Business Account </span>
               )}

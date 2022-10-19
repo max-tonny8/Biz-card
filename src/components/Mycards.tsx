@@ -48,7 +48,7 @@ const Mycards: FunctionComponent<MycardsProps> = () => {
         <i className="fa-regular fa-address-card"></i> My BizCards
         <span style={{ color: "#eeeeee" }}> ({card.length})</span>
       </h1>
-      <div className="container-fluid w-75 mb-5">
+      <div className="container-fluid _AllCards w-75 mb-5">
         <div className="row allCards">
           {card.length ? (
             card.map((card: Card) => {
@@ -69,6 +69,7 @@ const Mycards: FunctionComponent<MycardsProps> = () => {
                           <div data-bs-toggle="dropdown">
                             <img
                               src="more.png"
+                              className="moreBtn"
                               style={{ width: "1.5rem" }}
                               alt=""
                             />

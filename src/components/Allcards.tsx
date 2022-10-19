@@ -1,6 +1,7 @@
 import { FunctionComponent, useEffect, useState } from "react";
 import { Card } from "../interfaces/Card";
 import { getAllCards } from "../services/cardService";
+import { errorMsg } from "../services/feedbackService";
 import Navbar from "./Navbar";
 
 interface AllcardsProps {}
@@ -14,7 +15,7 @@ const Cards: FunctionComponent<AllcardsProps> = () => {
         setCards(result.data);
       })
       .catch((err) => {
-        alert("Something Went Wrong...");
+        errorMsg("Something went Wrong, Try Agian");
       });
   }, []);
 
@@ -26,7 +27,7 @@ const Cards: FunctionComponent<AllcardsProps> = () => {
         <span style={{ color: "#eeeeee" }}>({cards.length})</span>
       </h1>
 
-      <div className="container-fluid w-75 mb-5">
+      <div className="container-fluid _AllCards w-75 mb-5">
         <div className="row allCards">
           {/* Search Input */}
           <div className="input-group mx-auto mb-1">
