@@ -22,7 +22,7 @@ Bizcards can be conveniently shared to a non-business users who look for their s
 https://github.com/KfirLankry/Bizcards-Server
 ```
 
-## Modules Installation:
+## Dependencies Installation:
 
 ```
 npm i
@@ -33,3 +33,10 @@ npm i
 ```
 npm start
 ```
+## Screenshots:  
+![alt text](https://i.ibb.co/QdLY0Jt/bizcards.jpg?raw=true) 
+***
+![alt text](https://i.ibb.co/wCJDXqr/bizcards-2.jpg?raw=true)  
+***
+![alt text](https://i.ibb.co/cT9hSDj/bizcards-3.jpg?raw=true)  
+***
