@@ -319,4 +319,13 @@ a {
   ._AllCards {
     width: 100% !important;
   }
+
+  .devicesImg {
+    display: none;
+  }
+
+  .homeBtn {
+    margin: 0.5rem 0 0 0;
+    width: 100%;
+  }
 }

@@ -42,7 +42,11 @@ const Home: FunctionComponent<HomeProps> = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <img className="image img-fluid" src="bizcards.png" alt="" />
+              <img
+                className="image devicesImg img-fluid"
+                src="bizcards.png"
+                alt=""
+              />
             </div>
           </div>
         </div>
