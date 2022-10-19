@@ -51,7 +51,7 @@ const Profile: FunctionComponent<ProfileProps> = () => {
                   Business Account <i className="fa-solid fa-certificate"></i>{" "}
                 </span>
               ) : (
-                <span>Not Business Account </span>
+                <span>Free Account </span>
               )}
             </div>
           </div>
