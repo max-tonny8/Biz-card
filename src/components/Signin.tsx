@@ -53,6 +53,18 @@ const Signin: FunctionComponent<SigninProps> = () => {
             <h5 className="text-center mb-4">
               Sign in with your BizCards Account
             </h5>
+            {/* DEMO USER ALERT */}
+            <div
+              className="alert alert-success hidden mt-4 w-75 mx-auto"
+              role="alert"
+            >
+              <div className="text-center">
+                <div className="fw-bold">
+                  <i className="fa-solid fa-circle-exclamation"></i> Demo Login
+                </div>
+                <div>Email: demo@bizcards-app.com | Password: adminadmin</div>
+              </div>
+            </div>
             {/* FORM */}
             <form onSubmit={formik.handleSubmit}>
               <div className="form-floating mb-3 w-75 mx-auto">
