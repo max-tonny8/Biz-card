@@ -92,6 +92,11 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
                           <span>All BizCards</span>
                         </NavLink>
                       </li>
+                      <li className="nav-item ">
+                        <NavLink className="nav-link text-white" to="/profile">
+                          <span>Profile</span>
+                        </NavLink>
+                      </li>
                       <li className="nav-item">
                         <button
                           onClick={handleLogout}

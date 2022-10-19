@@ -12,10 +12,9 @@ const Cards: FunctionComponent<AllcardsProps> = () => {
     getAllCards()
       .then((result) => {
         setCards(result.data);
-        console.log(result.data);
       })
       .catch((err) => {
-        console.log(err);
+        alert("Something Went Wrong...");
       });
   }, []);
 

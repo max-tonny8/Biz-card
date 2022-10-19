@@ -234,6 +234,60 @@ a {
   justify-content: center;
 }
 
+/* Profile Card */
+.user-card {
+  color: #303336;
+}
+.containerDiv {
+  margin: 0 auto;
+  width: 30rem;
+  height: 465px;
+  background: white;
+  border-radius: 3px;
+  position: relative;
+  filter: drop-shadow(0 3px 1px rgba(0, 0, 0, 0.576));
+}
+.information {
+  text-align: center;
+}
+.avatar {
+  margin: 0 auto;
+  margin: -82px auto 15px;
+  display: block;
+}
+.name {
+  font-size: 22px;
+}
+.position {
+  font-size: 16px;
+  color: #8c98a8;
+  margin-bottom: 24px;
+}
+.stats {
+  margin: auto;
+  border-top: 1px solid #ced5e0;
+  width: 240px;
+}
+.stats .followers,
+.stats .following,
+.stats .stories {
+  display: inline-block;
+  padding: 6px 10px 0;
+}
+.stats .followers,
+.stats .following {
+  border-right: 1px solid #ced5e0;
+}
+.stats .value {
+  font-size: 18px;
+  font-weight: 600;
+}
+.stats .label {
+  display: block;
+  font-size: 14px;
+  color: #8c98a8;
+}
+
 @keyframes fadeInRight {
   from {
     opacity: 0;

@@ -9,6 +9,7 @@ import Allcards from "./components/Allcards";
 import Newcard from "./components/Newcard";
 import Mycards from "./components/Mycards";
 import Editcard from "./components/Editcard";
+import Profile from "./components/Profile";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="signup" element={<Signup />} />
           <Route path="all-cards" element={<Allcards />} />
           <Route path="new-card" element={<Newcard />} />
+          <Route path="profile" element={<Profile />} />
           <Route path="my-cards">
             <Route index element={<Mycards />} />
             <Route path="edit/:id" element={<Editcard />} />
