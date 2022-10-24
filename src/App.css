@@ -82,6 +82,18 @@
   filter: drop-shadow(0 3px 1px rgba(0, 0, 0, 0.576));
 }
 
+.pnf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.pageNotFoundImg {
+  width: 40rem;
+}
+
 h1 h2 h3 {
   font-family: "Montserrat";
 }

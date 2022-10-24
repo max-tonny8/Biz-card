@@ -10,6 +10,7 @@ import Newcard from "./components/Newcard";
 import Mycards from "./components/Mycards";
 import Editcard from "./components/Editcard";
 import Profile from "./components/Profile";
+import Pnf from "./components/Pnf";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route index element={<Mycards />} />
             <Route path="edit/:id" element={<Editcard />} />
           </Route>
+          <Route path="*" element={<Pnf />} />
         </Routes>
       </Router>
     </div>
