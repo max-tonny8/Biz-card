@@ -115,7 +115,7 @@ const Home: FunctionComponent<HomeProps> = () => {
               <div className="card-body">
                 <h2>Free</h2>
                 <p>
-                  <i className="icon fas fa-check"></i> Create up to 3 BizCards
+                  <i className="icon fas fa-check"></i> Get all BizCards Exists!
                 </p>
                 <p>
                   <i className="icon fas fa-check"></i> Get free support for the
@@ -135,10 +135,10 @@ const Home: FunctionComponent<HomeProps> = () => {
           <div className="pricing-col col-lg-6 col-md-6">
             <div className=" card">
               <div className="card-header">
-                <h3 className="mt-2">Unlimited Plan</h3>
+                <h3 className="mt-2">Business Plan</h3>
               </div>
               <div className="card-body">
-                <h2>$12 / mo</h2>
+                <h2>$5 / mo</h2>
                 <p>
                   <i className="icon fas fa-check"></i> Create unlimited
                   BizCards!
