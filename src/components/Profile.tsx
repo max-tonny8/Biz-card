@@ -1,4 +1,6 @@
 import { FunctionComponent, useEffect, useState } from "react";
+import { Card } from "../interfaces/Card";
+import { getCardByUserId } from "../services/cardService";
 import { errorMsg } from "../services/feedbackService";
 import { getUser } from "../services/userService";
 import Navbar from "./Navbar";
@@ -6,6 +8,7 @@ import Navbar from "./Navbar";
 interface ProfileProps {}
 
 const Profile: FunctionComponent<ProfileProps> = () => {
+  const [userCards, setUserCards] = useState<Card[]>([]);
   const [userProfile, setUserProfile] = useState<any>({
     id: "",
     name: "",
@@ -13,6 +16,14 @@ const Profile: FunctionComponent<ProfileProps> = () => {
     biz: false,
   });
   useEffect(() => {
+    getCardByUserId()
+      .then((result) => {
+        setUserCards(result.data);
+      })
+      .catch((err) => {
+        errorMsg("Something went wrong, Try agian.");
+      });
+
     getUser()
       .then((result) => {
         setUserProfile(result.data);
@@ -45,10 +56,14 @@ const Profile: FunctionComponent<ProfileProps> = () => {
               {userProfile.email}
             </div>
             <div className="mb-2">
+              <strong>BizCards Created: </strong>
+              {userCards.length}
+            </div>
+            <div className="mb-2">
               <strong>Account Type: </strong>
               {userProfile.biz ? (
                 <span style={{ color: "green" }}>
-                  Business Account <i className="fa-solid fa-certificate"></i>{" "}
+                  Business <i className="fa-solid fa-certificate"></i>{" "}
                 </span>
               ) : (
                 <span>Free Account </span>
