@@ -2,12 +2,13 @@ import { FunctionComponent, useEffect, useState } from "react";
 import { Card } from "../interfaces/Card";
 import { getCardByUserId } from "../services/cardService";
 import { errorMsg } from "../services/feedbackService";
-import { getUser } from "../services/userService";
+import { getBiz, getUser } from "../services/userService";
 import Navbar from "./Navbar";
 
 interface ProfileProps {}
 
 const Profile: FunctionComponent<ProfileProps> = () => {
+  const [isBiz, setIsBiz] = useState<boolean>(false);
   const [userCards, setUserCards] = useState<Card[]>([]);
   const [userProfile, setUserProfile] = useState<any>({
     id: "",
@@ -16,6 +17,7 @@ const Profile: FunctionComponent<ProfileProps> = () => {
     biz: false,
   });
   useEffect(() => {
+    setIsBiz(getBiz());
     getCardByUserId()
       .then((result) => {
         setUserCards(result.data);
@@ -55,10 +57,12 @@ const Profile: FunctionComponent<ProfileProps> = () => {
               <strong>Email: </strong>
               {userProfile.email}
             </div>
-            <div className="mb-2">
-              <strong>BizCards Created: </strong>
-              {userCards.length}
-            </div>
+            {isBiz ? (
+              <div className="mb-2">
+                <strong>BizCards Created: </strong>
+                {userCards.length}
+              </div>
+            ) : null}
             <div className="mb-2">
               <strong>Account Type: </strong>
               {userProfile.biz ? (
