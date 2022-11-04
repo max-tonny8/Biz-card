@@ -11,11 +11,14 @@ interface SignupProps {}
 const Signup: FunctionComponent<SignupProps> = () => {
   // Checks if Checkbox is business or not
   const [checkboxValue, setCheckboxValue] = useState<boolean>(false);
+  const [btnText, setBtnText] = useState<String>("Sign Up");
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     if (event.target.checked) {
       setCheckboxValue(true);
+      setBtnText("Sign Up as Business");
     } else {
       setCheckboxValue(false);
+      setBtnText("Sign Up");
     }
   };
   const navigate = useNavigate();
@@ -130,10 +133,10 @@ const Signup: FunctionComponent<SignupProps> = () => {
                   type="submit"
                   className="btn btn-dark w-75  mt-1"
                 >
-                  Sign Up
+                  {btnText}
                 </button>
               </div>
-              <div className="form-check form-switch mx-auto mt-4">
+              <div className="form-check form-switch mx-auto mt-4 mb-3">
                 <input
                   className="form-check-input"
                   type="checkbox"
@@ -146,7 +149,7 @@ const Signup: FunctionComponent<SignupProps> = () => {
                   className="form-check-label mx-2"
                   htmlFor="flexSwitchCheckDefault"
                 >
-                  Sign up as Bussiness Account
+                  <strong> Sign me up as Bussiness Account</strong>
                 </label>
               </div>
               <p className="text-center mt-5">
