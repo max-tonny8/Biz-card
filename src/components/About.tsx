@@ -6,9 +6,13 @@ interface AboutProps {}
 const About: FunctionComponent<AboutProps> = () => {
   return (
     <>
-      <div className="container-fluid content ">
+      <div className="container-fluid content">
         <div className="row">
-          <div className="col-lg-6 mt-5">
+          <div
+            className="col-lg-6 mt-5"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
             <h1>What is a digital business card?</h1>
             <p>
               Digital business cards are the modern way to share contact
@@ -21,16 +25,28 @@ const About: FunctionComponent<AboutProps> = () => {
               fit your style.
             </p>
           </div>
-          <div className="col-lg-6 mt-5 center">
+          <div
+            className="col-lg-6 mt-5 center"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
             <img className="image img-fluid " src="card1.png" alt="" />
           </div>
         </div>
 
         <div className="row">
-          <div className="col-lg-6 mt-5 center">
+          <div
+            className="col-lg-6 mt-5 center"
+            data-aos="fade-down"
+            data-aos-duration="800"
+          >
             <img className="image img-fluid" src="card2.png" alt="" />
           </div>
-          <div className="col-lg-6 mt-5">
+          <div
+            className="col-lg-6 mt-5"
+            data-aos="fade-down"
+            data-aos-duration="800"
+          >
             <h1>How do BizCards digital cards work?</h1>
             <p>
               BizCards digital business cards are free, completely customizable,
@@ -45,7 +61,7 @@ const About: FunctionComponent<AboutProps> = () => {
         </div>
 
         <div className="row">
-          <div className="col-lg-6 mt-5">
+          <div className="col-lg-6 mt-5" data-aos="fade-left">
             <h1>The best contactless business card.</h1>
             <p>
               BizCards digital business cards are germ-free—no physical contact
@@ -56,7 +72,7 @@ const About: FunctionComponent<AboutProps> = () => {
               shipping new cards.
             </p>
           </div>
-          <div className="col-lg-6 mt-5 center">
+          <div className="col-lg-6 mt-5 center" data-aos="fade-left">
             {" "}
             <img className="image img-fluid" src="card3.png" alt="" />
           </div>

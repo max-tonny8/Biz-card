@@ -57,7 +57,7 @@ const Home: FunctionComponent<HomeProps> = () => {
         <img className="wave" src="wave.png" alt="" />
       </div>
       {/* Features */}
-      <section id="features">
+      <section id="features" data-aos="fade-up">
         <div className="row">
           <div className="feature-box col-lg-4">
             <i className="icon fas fa-play-circle fa-3x"></i>
@@ -102,7 +102,7 @@ const Home: FunctionComponent<HomeProps> = () => {
 
       {/* Pricing */}
 
-      <section id="pricing">
+      <div id="pricing" data-aos="fade-up" data-aos-duration="800">
         <h1 className="text-dark">Share your BizCard with the world.</h1>
         <p className="text-dark">Choose your BizCards plan.</p>
 
@@ -161,7 +161,7 @@ const Home: FunctionComponent<HomeProps> = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
       <Footer />
     </div>
   );
